@@ -6,7 +6,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "files")
 public class File {
-    
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -64,11 +64,11 @@ public class File {
         this.size = size;
     }
 
-    public String getFolder() {
+    public Folder getFolder() {
         return folder;
     }
 
-    public void setFolder(String folder) {
+    public void setFolder(Folder folder) {
         this.folder = folder;
     }
 }
